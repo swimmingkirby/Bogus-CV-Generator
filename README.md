@@ -1,4 +1,4 @@
-# Bogus CV Generator
+![alt text](https://imgur.com/a/0LgpVye)
 
 The Bogus CV Generator is a tool that generates multiple real-world CVs with different information each time, using the Bogus and OpenAI APIs. It's designed to aid with the creation of test data and offers customization options. The project is open source, and contributions are welcome.
 
