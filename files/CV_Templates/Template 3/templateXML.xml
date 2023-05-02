@@ -1,0 +1,20 @@
+<cv>
+  <name></name>
+  <job_title></job_title>
+  <address></address>
+  <phone></phone>
+  <email></email>
+  <linkedin></linkedin>
+  <cover_letter>
+    <greeting></greeting>
+    <paragraph></paragraph>
+    <paragraph></paragraph>
+  </cover_letter>
+  <skills>
+    <skill></skill>
+    <skill></skill>
+    <skill></skill>
+    <skill></skill>
+  </skills>
+  <interests></interests>
+</cv>

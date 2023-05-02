@@ -1,0 +1,74 @@
+Please maintain the xml format:
+<CV>
+   <Contact>
+      <FirstName />
+      <LastName />
+      <Title />
+      <Address />
+      <City />
+      <State />
+      <Zip />
+      <Phone />
+      <Email />
+      <LinkedIn />
+   </Contact>
+   <Profile />
+   <KeySkills>
+      <Skill />
+      <Skill />
+      <Skill />
+      <Skill />
+      <Skill />
+   </KeySkills>
+   <ActivitiesAndInterests>
+      <Interest />
+      <Interest />
+      <Interest />
+      <Interest />
+      <Interest />
+      <Interest />
+   </ActivitiesAndInterests>
+   <employment>
+      <position />
+      <employer />
+      <city />
+      <state />
+      <startdate />
+      <enddate />
+      <description />
+   </employment>
+   <employment>
+      <position />
+      <employer />
+      <city />
+      <state />
+      <startdate />
+      <enddate />
+      <description />
+   </employment>
+   <employment>
+      <position />
+      <employer />
+      <city />
+      <state />
+      <startdate />
+      <enddate />
+      <description />
+   </employment>
+   <education>
+      <degree />
+      <institution />
+      <city />
+      <state />
+      <grad_date />
+      <additional_info />
+      <additional_info />
+   </education>
+   <education>
+      <degree />
+      <institution />
+      <city />
+      <state />
+      <grad_date />
+   </education>
+</CV>

@@ -1,0 +1,1 @@
+This is for creating test data.Fill in this xml using the personal and job details provided as a guide, if no details are provided add some that are relevant and be creative, expand on what you see fit, if the information is inconherent or inconsistent feel free to alter it in a proffessional manner.Make sure all fields are filled in.Please maintain the xml format:
