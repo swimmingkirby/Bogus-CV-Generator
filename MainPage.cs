@@ -71,7 +71,7 @@ class MainPage
         int numTemplate;
         do
         {
-            Console.WriteLine("What template would you like to select? (Enter a number between 1 and {0})", totalChildren);
+            Console.WriteLine("What template would you like to select? (Enter a number between 1 and {0}).Recommended template is 1", totalChildren);
             string input = Console.ReadLine();
             if (!int.TryParse(input, out numTemplate) || numTemplate < 1 || numTemplate > totalChildren)
             {
