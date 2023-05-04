@@ -6,11 +6,11 @@ The Bogus CV Generator is a tool that generates multiple real-world CVs with dif
 
 Before using the Bogus CV Generator, make sure you take the following steps:
 
-1. Enter the App config Bogus-CV-Gen.dll and populate the API key with your own OpenAI API key. See this: https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key
+1. Enter the App config Bogus-CV-Gen.dll and populate the API key with your own OpenAI API key. See this: https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key.
 2.If you do not have an OpenAI API key for any reason you can set testmode to true on Appconfig however this will be limited to just one set of information for cv generation.
-2. If desired, you can change the file directories used in the app, but we recommend using the default settings.
-3. Follow the CV generation steps, once completed navigate to the CV folder (files -> CV) and you will find the generated word documents.
-4. For more customisability there are further settings that can be edited in the config file.
+3. If desired, you can change the file directories used in the app, but we recommend using the default settings.
+4. Follow the CV generation steps, once completed navigate to the CV folder (files -> CV) and you will find the generated word documents.
+5. For more customisability there are further settings that can be edited in the config file.
 
 ## Usage
 
