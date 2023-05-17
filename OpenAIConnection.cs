@@ -2,11 +2,13 @@
 using System.Configuration;
 using OpenAI_API.Chat;
 using OpenAI_API.Models;
+using Bogus_CV_Gen;
+
 public class OpenAIConnection
 {
-    private static string inputDirectoryPath = ConfigurationManager.AppSettings["templateDirectory"];
-    private static string testmode = ConfigurationManager.AppSettings["testmode"];
-    private static string gptmodel = ConfigurationManager.AppSettings["gptmodel"];
+    private static string inputDirectoryPath = ConfigSettings.TempFolderPath;
+    private static string testmode = ConfigSettings.Testmode;
+    private static string gptmodel = ConfigSettings.GPTModel;
     public static async Task OpenAI (OpenAIAPI api, string userString, int templateNumber)
 	{
         var promptText = File.ReadAllText(Path.Combine(inputDirectoryPath, $"Template {templateNumber}\\prompt.txt"));

@@ -1,19 +1,27 @@
 ﻿using OpenAI_API;
 using System.Text;
 using System.Configuration;
+using Bogus_CV_Gen;
+
 class MainPage
 {
-    private static string docsFolderPath = ConfigurationManager.AppSettings["outputDirectory"]; 
-    private static string tempFolderPath = ConfigurationManager.AppSettings["templateDirectory"];
-    private static string apiKey = ConfigurationManager.AppSettings["apikey"];
+
+    private static string docsFolderPath = ConfigSettings.DocsFolderPath;
+    private static string tempFolderPath = ConfigSettings.TempFolderPath;
+    private static string apiKey = ConfigSettings.ApiKey;
+
+
     static async Task Main()
     {
         CreateFoldersIfNotExist(docsFolderPath);
+        Console.ForegroundColor = ConsoleColor.Cyan;
         Console.WriteLine("______  _____ _____ _   _ _____   _____ _   _ \r\n| ___ \\|  _  |  __ \\ | | /  ___| /  __ \\ | | |\r\n| |_/ /| | | | |  \\/ | | \\ `--.  | /  \\/ | | |\r\n| ___ \\| | | | | __| | | |`--. \\ | |   | | | |\r\n| |_/ /\\ \\_/ / |_\\ \\ |_| /\\__/ / | \\__/\\ \\_/ /\r\n\\____/  \\___/ \\____/\\___/\\____/   \\____/\\___/ \r\n                                            ");
+        Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("Connecting to OpenAI API...");
         var api = await ConnectToOpenApiAsync(apiKey);
+        Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("Connected to OpenAI API!");
-
+        Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("Welcome to the Bogus CV Generator!");
         string customUser = MainPage.PromptUserForCustomInformation();
         int numCvs = PromptUserForNumCvs();

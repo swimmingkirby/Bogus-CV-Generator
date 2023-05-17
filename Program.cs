@@ -1,4 +1,5 @@
-﻿using DocumentFormat.OpenXml.Packaging;
+﻿using Bogus_CV_Gen;
+using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
 using OpenAI_API;
 using System.Configuration;
@@ -11,8 +12,10 @@ namespace Program
     {
         private static int templateNumber;
         private static string templateDocumentPath;
-        private static string outputDirectoryPath = ConfigurationManager.AppSettings["outputDirectory"];
-        private static string inputDirectoryPath = ConfigurationManager.AppSettings["templateDirectory"];
+        private static string outputDirectoryPath = ConfigSettings.DocsFolderPath;
+        private static string inputDirectoryPath = ConfigSettings.TempFolderPath;
+
+
         private static readonly object _xmlLock = new object();
 
 
